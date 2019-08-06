@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<style>
+
+	form {
+			width: 30% ;
+			margin: auto; 
+			border: 2px solid blue;
+			border-radius: 10px; 
+			padding: 10px;
+		/*	overflow: auto; */
+			position: static;
+			
+			}
+   
+      #warn1 { background-color: red;
+      color:white; }
+			#warn2 { background-color: red;
+      color:white;}
+      #warn3 { background-color: red;
+      color:white;}
+      #warn5 { background-color: red;
+      color:white;}
+      
+      #hide { color:blue;}
+      #outside { background-color: white;}
+
+      body { background-color:#ADD8E6;}
+      #mail { width: 1em;}
+      
+      
+
+</style>
+</head>
+<h1><center>Login</h1>
+
+<form method="GET" id = "outside" action="login.php" onsubmit="return f1()" >
+<fieldset id="fieldset"> <legend> Please fill in the Information. </legend> 
+
+<img   src="captcha.php" align="middle" ><br><br>
+<input type="text" size = 10 name="guess" id = "guess" placeholder="Fill in guess" required  >What is the text?<br>
+<span id="warn5"></span><br>
+	   
+<input type="text" size = 10 name="pass" id = "pass" placeholder="Fill in pass" required >password<br>
+
+<input type="text" size = 10 name="UCID" id = "UCID" placeholder="Fill in UCID" required >UCID<br>
+
+
+<input type="submit" value="Submit">
+
+</form>
+
+<script>
+
+    //ptrX.addEventListener ( "blur" , f1 )	
+    
+//var warn5 = document.getElementById ( "warn5" );
+
+function f1 ( ) {
+  var ptrX = document.getElementById( "guess" );
+  var ptrY = document.getElementById( "pass" );
+  var ptrZ = document.getElementById( "UCID" );
+
+	var x = ptrX.value.trim();
+  var y = ptrY.value.trim();
+  var z = ptrZ.value.trim();
+ 	if ( x == "" || y=="" || z=="" ) { return false;  } else { return true ; } 
+	//else           { warn5.innerHTML="";  }
+	//if ( w1 == ""  ) {   return false; } else {  return true; }
+
+  
+  }
+
+
+</script>
+</html>
