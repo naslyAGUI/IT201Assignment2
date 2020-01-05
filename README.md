@@ -1,2 +1,2 @@
-# IT202Assignment2
-This is a continuation fo IT202Assignment1 adding authentication and other feautures. 
+# Internet-And-Application-Assignment2
+This is a continuation fo Internet-And-Application-Assignment1 adding authentication and other feautures. 
